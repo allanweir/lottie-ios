@@ -87,6 +87,8 @@ typedef void (^LOTAnimationCompletionBlock)(BOOL animationFinished);
 /// Defaults to NO
 @property (nonatomic, assign) BOOL shouldRasterizeWhenIdle;
 
+@property (nonatomic, assign, nullable) UIWindow *windowOverride;
+
 /* 
  * Plays the animation from its current position to a specific progress.
  * The animation will start from its current position.
