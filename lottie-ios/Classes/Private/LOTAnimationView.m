@@ -510,6 +510,13 @@ static NSString * const kCompContainerAnimationKey = @"play";
   }
 }
 
+- (UIWindow *)window {
+    if (self.windowOverride != nil) {
+        return self.windowOverride;
+    }
+    return [super window];
+}
+
 # pragma mark - External Methods - Interactive Controls
 
 - (void)setValueDelegate:(id<LOTValueDelegate> _Nonnull)delegate
